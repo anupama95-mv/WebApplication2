@@ -1,0 +1,22 @@
+﻿@page
+@model WebApplication2.Pages.ProductListPageModel
+@{
+    Layout = "_MasterLayout";
+}
+
+<table id="myTable" class="display">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Product</th>
+            <th>Price</th>
+            
+        </tr>
+    </thead>
+</table>
+
+<script>
+    document.addEventListener("DOMContentLoaded", function () {
+        let table = new DataTable('#myTable');
+    });
+</script>
